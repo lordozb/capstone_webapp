@@ -1,0 +1,44 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+canvas {
+  border: 1px soild black;
+}
+h3 {
+  display: inline-block;
+  padding: .3em;
+  font-family: 'Megrim', cursive;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  color: rgba(255,255,255,.68);
+}
+
+p {
+  display: inline-block;
+  padding: .3em;
+  font-family: 'Megrim', cursive;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 50%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  color: rgba(255,255,255,.68);
+  border: .175em solid rgba(255,255,255,.1);
+}
