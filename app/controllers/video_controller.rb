@@ -2,11 +2,14 @@ class VideoController < ApplicationController
 	
 	protect_from_forgery with: :null_session
 
-	def first
+	def getStarted
+	end
+
+	def explore
+		@videos = Video.all
 	end
 
 	def index
-		@video = Video.all
 	end
 
 	def new

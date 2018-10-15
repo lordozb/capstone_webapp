@@ -6,5 +6,8 @@ resources :video
 get '/duration' => 'video#duration'
 post 'acknowledge' => 'video#acknowledge'
 
+get '/getStarted' => 'video#getStarted'
+get '/explore' => 'video#explore'
+
 root 'video#index'
 end

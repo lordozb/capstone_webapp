@@ -1,0 +1,79 @@
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Smart Learning System</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">How to use</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Explore</a>
+            </li>
+           </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-warning text-white">
+      <div class="container text-center">
+        <h1>Get Started</h1>
+      </div>
+    </header>
+
+    <div id = "purple">
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>About</h2>
+              <p class="lead">The Smart Learning System uses the data collected from your EEG device to give you better analysis on your online learning. It gets the following things done for you:</p>
+              <ul>
+                <li>Give you chart of your attention levels during the course.</li>
+                <li>Provide you deeper analytics of your learning based on the data from your peers.</li>
+                <li>Proving you real-time feedback.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>How to use</h2>
+              <p class="lead">Follow the steps to use the Smart Learning System.</p>
+              <ul>
+                <li> Connect your EEG device with our python script</li>
+                <li> Open the video you want to watch, copy down its ID and pass it on the script.</li>
+                <li> Once done press 'q' on the terminal and click on the analyze button to view your analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="Exlpore">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2>Explore</h2>
+              <p class="lead">Choose from the courses available</p>
+              <p>
+                <button class = "btn btn-danger btn-sm">
+                  <%= link_to "Courses", explore_path, :class => "btn-sm" %>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
