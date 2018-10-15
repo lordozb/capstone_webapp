@@ -13,20 +13,18 @@
       </div>
 </header>
 
-</br>
+<br/>
 <div class = "container">
 	<div class = "row">
 		<% @videos.each do |v| %>
-			<div class = col-md-2>
-				<div class="card" style="width: 18rem;">
-				  <div class="card-body">
-				    <h5 class="card-title"> <%= v.title %> </h5>
-				    <p class="card-text">Demo Video</p>
-				    <button class = "btn btn-success">
-				    	<%= link_to "Watch", video_path(v), :class => "btn-md" %>
-				    </button>
-				  </div>
-				</div>
+			<div class="card border-success mb-3" style="width: 18rem; margin:0 auto">
+			  <div class="card-body">
+			    <h5 class="card-title"> <%= v.title %> </h5>
+			    <p class="card-text">Demo Video</p>
+			    <button class = "btn btn-success">
+			    	<%= link_to "Watch", video_path(v), :class => "btn-md" %>
+			    </button>
+			  </div>
 			</div>
 		<% end %>
 	</div>
