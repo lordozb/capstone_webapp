@@ -42,3 +42,15 @@ h3 {
   color: rgba(255,255,255,.68);
   border: .175em solid rgba(255,255,255,.1);
 }
+
+#video {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+#video-title {
+  position: absolute;
+  top: 90%;
+  left: 20%;
+}
