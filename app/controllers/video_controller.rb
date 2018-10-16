@@ -12,6 +12,10 @@ class VideoController < ApplicationController
 	def index
 	end
 
+	def analyze
+		@video = Video.find(params[:id])
+	end
+
 	def new
 		@video = Video.new
 	end

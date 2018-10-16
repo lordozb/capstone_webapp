@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-resources :video
+resources :video do
+	member do
+		get 'analyze'
+	end
+end
 
 get '/duration' => 'video#duration'
 post 'acknowledge' => 'video#acknowledge'
