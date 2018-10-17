@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_13_191904) do
+ActiveRecord::Schema.define(version: 2018_10_16_192429) do
+
+  create_table "analyses", force: :cascade do |t|
+    t.integer "video_id"
+    t.string "file_loc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "analyzes", force: :cascade do |t|
+    t.string "file_location"
+    t.integer "video_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "file_locations", force: :cascade do |t|
+    t.integer "video_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "videos", force: :cascade do |t|
     t.string "title"

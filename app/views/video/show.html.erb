@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/explore"><b>Explore<b></a>
+              <a class="nav-link js-scroll-trigger" href="/explore"><b>Courses<b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href= <%= "#{analyze_video_path}"%> ><b>Analyze<b></a>
+              <a class="nav-link js-scroll-trigger" href=""><b>Analyze<b></a>
             </li>
            </ul>
         </div>
@@ -25,3 +25,10 @@
 <div id = "video-title">
   <h2><%= "Video title - #{@video.title} (id-#{@video.id})" %></h2>
 </div> 
+
+<div id = "upload">
+<%= simple_form_for [@video, @video.analyzes.build], url: video_analyze_index_path(@video) do |f| %>
+  <%= f.file_field :file_location %>
+  <%= f.button :submit %>
+<% end %>
+</div>

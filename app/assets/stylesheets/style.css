@@ -54,3 +54,9 @@ h3 {
   top: 90%;
   left: 20%;
 }
+
+#upload {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+}
