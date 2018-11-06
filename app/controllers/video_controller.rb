@@ -21,13 +21,13 @@ class VideoController < ApplicationController
 	end
 
 	def duration
-		@video = Video.find(params[:id].to_i)
-		render plain: @video[:duration]
-	end
-
-	def acknowledge
-		@file = params[:id].to_s
-		@id = params[:id].to_i
+		if Video.exists?(:id => params[:id].to_i)
+			@video = Video.find(params[:id].to_i)
+			response = @video[:duration].to_s+","+@video[:title].to_s
+			render plain: response
+		else
+			render plain: "-1,-1"
+		end
 	end
 
 end
