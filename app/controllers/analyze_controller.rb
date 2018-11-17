@@ -1,5 +1,9 @@
 class AnalyzeController < ApplicationController
 
+	def index
+
+	end
+
 	def create
 		@video = Video.find(params[:video_id])
 		@analyze = @video.analyzes.create(params[:analyze].permit(:file_location))
